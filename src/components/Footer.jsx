@@ -1,7 +1,6 @@
 import { LogoDark } from "./Logo.jsx";
-console.log(LogoDark);
 
-export function Footer() {
+function Footer() {
   return (
     <footer>
       <LogoDark />
@@ -9,3 +8,5 @@ export function Footer() {
     </footer>
   );
 }
+
+export default Footer;

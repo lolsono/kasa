@@ -1,0 +1,19 @@
+header {
+  height: 46.88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .link-acceuil {
+    margin-right: 26px;
+  }
+}

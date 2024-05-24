@@ -1,9 +1,5 @@
-export const LogoDesktop = () => {
-  return <img src="../assets/picture/logo-desktop.svg" alt="logo desktop" />;
-};
-
-export const LogoMobile = () => {
-  return <img src="../assets/picture/logo-mobile.svg" alt="logo mobile" />;
+export const Logo = () => {
+  return <img src="../src/assets/picture/logo.svg" alt="logo mobile" />;
 };
 
 export const LogoDark = () => {
