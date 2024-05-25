@@ -10,3 +10,26 @@
   margin: auto;
   width: 90%;
 }
+
+.cover-card {
+  height: 100%;
+  width: 100%;
+
+  div {
+    height: 255px;
+    width: 100%;
+    @include containner-card;
+  }
+
+  h2 {
+    color: $Text-color;
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 19.71px;
+    width: 228px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
