@@ -1,0 +1,20 @@
+.tag-container {
+  padding: 0px;
+  gap: 10px;
+  display: flex;
+  list-style-type: none;
+
+  li {
+    color: $Text-color;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14.26px;
+    height: 18px;
+    width: 31%;
+    border-radius: 10px;
+    background-color: #ff6060;
+    justify-content: center;
+  }
+}

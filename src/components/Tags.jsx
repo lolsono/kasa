@@ -2,7 +2,7 @@ import React from "react";
 
 function Tags({ tags }) {
   return (
-    <ul>
+    <ul className="tag-container">
       {tags.map((tag, index) => (
         <li key={index}>{tag}</li>
       ))}
