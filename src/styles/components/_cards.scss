@@ -1,3 +1,4 @@
+//cards de decoration avec un fond en image
 .card-image-decorative {
   @include containner-card;
   height: 111px;
@@ -16,5 +17,29 @@
     background-color: rgba(0, 0, 0, 0.25);
     display: block;
     position: relative;
+  }
+}
+
+//cards presentation sur la page d'acceuil
+.cover-card {
+  height: 100%;
+  width: 100%;
+
+  div {
+    height: 255px;
+    width: 100%;
+    @include containner-card;
+  }
+
+  h2 {
+    color: $Text-color;
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 19.71px;
+    width: 228px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
   }
 }

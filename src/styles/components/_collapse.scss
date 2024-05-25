@@ -1,0 +1,18 @@
+.collapse-container {
+  margin-top: 20px;
+  button {
+    color: $Text-color;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18.54px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: $Primary-color;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+}
