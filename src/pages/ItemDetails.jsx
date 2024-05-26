@@ -1,6 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import Collapse from "../components/Collapse.jsx";
+import {CollapseLi} from "../components/Collapse.jsx";
 import Host from "../components/Host.jsx";
 import Tags from "../components/Tags.jsx";
 import data from "../logements.json";
@@ -24,7 +24,7 @@ function ItemDetails() {
             <Host host={found.host} />
           </div>
           <Collapse title="Description" content={found.description} />
-          <Collapse title="Équipements" content={found.equipments} />
+          <CollapseLi title="Équipements" content={found.equipments} />
         </>
       )}
     </div>

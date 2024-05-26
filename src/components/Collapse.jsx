@@ -28,4 +28,35 @@ function Collapse({ title, content }) {
   );
 }
 
+export function CollapseLi({ title, content }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="collapse-container-list">
+      <button onClick={toggleCollapse}>
+        {title}{" "}
+        {isOpen ? (
+          <FontAwesomeIcon icon={faChevronDown} />
+        ) : (
+          <FontAwesomeIcon icon={faChevronUp} />
+        )}
+      </button>
+      {isOpen && (
+        <div>
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+
 export default Collapse;

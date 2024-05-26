@@ -1,4 +1,21 @@
 .detaile-page-container {
+
+  h2 {
+    color: $Primary-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19,96px;
+  }
+
+  //provisoir en attendant le carouselle
   img {
     border-radius: 10px;
     height: 255px;
