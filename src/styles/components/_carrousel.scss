@@ -1,0 +1,25 @@
+.carrousel-container {
+  margin-top: 27px;
+  img {
+    position: relative;
+    object-fit: cover;
+  }
+
+  .fleche-droite {
+    height: 24px;
+    width: 24px;
+    color: white;
+    position: absolute;
+    top: 32%;
+    right: 30px;
+  }
+
+  .fleche-gauche {
+    height: 24px;
+    width: 24px;
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 30px;
+  }
+}
