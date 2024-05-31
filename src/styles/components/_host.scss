@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   flex-direction: row;
+  width: 24%;
 
   .round-image {
     width: 32px;
@@ -13,6 +14,7 @@
   }
 
   h3 {
+    color: $Primary-color;
     font-size: 12px;
     font-weight: 500;
     line-height: 17.11px;

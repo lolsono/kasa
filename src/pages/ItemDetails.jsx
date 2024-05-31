@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel.jsx";
 import Collapse, { CollapseLi } from "../components/Collapse.jsx";
 import Host from "../components/Host.jsx";
+import Stars from "../components/Rating.jsx";
 import Tags from "../components/Tags.jsx";
 import data from "../logements.json";
 
@@ -19,7 +20,8 @@ function ItemDetails() {
           <h2>{found.title}</h2>
           <p>{found.location}</p>
           <Tags tags={found.tags} />
-          <div>
+          <div className="owner-info-container">
+            <Stars rating={found.rating} />
             <Host host={found.host} />
           </div>
           <Collapse title="Description" content={found.description} />
