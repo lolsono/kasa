@@ -4,7 +4,9 @@ import { Logo } from "./Logo.jsx";
 function Header() {
   return (
     <header>
-      <Logo />
+      <h1>
+        <Logo />
+      </h1>
       <nav>
         <Link className="link-acceuil" to="/">
           ACCUEIL

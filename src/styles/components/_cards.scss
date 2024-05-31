@@ -14,7 +14,7 @@
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.6);
     display: block;
     position: relative;
   }
@@ -41,5 +41,35 @@
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
+  }
+}
+
+// Styles pour les écrans de largeur minim de 600px
+@media (min-width: 1024px) {
+  .cover-card {
+    width: 100%;
+    margin-top: 43px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+
+    div {
+      margin-top: 0px;
+      width: 30%;
+    }
+  }
+
+  .card-image-decorative {
+    h2 {
+      width: 100%;
+      bottom: 42px;
+      left: 16px;
+      text-align: center;
+    }
   }
 }
