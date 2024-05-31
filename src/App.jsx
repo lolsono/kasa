@@ -4,10 +4,10 @@ import Routing from "./Routes/Routes.jsx";
 function App() {
   return (
     <div>
-      <div className="body-containner">
-        <Header />
+      <Header />
+      <main className="body-containner">
         <Routing />
-      </div>
+      </main>
       <Footer />
     </div>
   );

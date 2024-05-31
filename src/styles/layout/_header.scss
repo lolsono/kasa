@@ -1,6 +1,8 @@
 header {
+  padding-top: 20px;
+  margin: auto;
+  width: 90%;
   height: 46.88px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +16,6 @@ header {
   }
 
   .link-acceuil {
-    margin-right: 26px;
+    margin-right: 15px;
   }
 }

@@ -8,7 +8,7 @@ function CardList() {
     <div className="cover-card">
       {data.map((item) => (
         <div key={item.id}>
-          <Link to={`/${item.id}`}>
+          <Link to={`/lodging/${item.id}`}>
             <img src={item.cover} alt={item.title} />
             <h2>{item.title}</h2>
           </Link>

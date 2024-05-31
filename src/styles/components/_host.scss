@@ -1,16 +1,15 @@
 .host {
   display: flex;
   height: 33px;
-  width: 100%;
   align-items: center;
   flex-direction: row;
-  width: 24%;
 
   .round-image {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 10px;
   }
 
   h3 {

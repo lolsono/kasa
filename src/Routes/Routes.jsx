@@ -6,12 +6,14 @@ import ItemDetails from "../pages/ItemDetails.jsx";
 
 function Routing() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/*" element={<ErrorPages404 />} />
-      <Route path="/:id" element={<ItemDetails />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<ErrorPages404 />} />
+        <Route path="/lodging/:id" element={<ItemDetails />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 .collapse-container {
   @include collapse;
   div {
+    background-color: #f6f6f673;
     p {
       padding: 10px;
       font-size: 12px;
@@ -14,6 +15,7 @@
   @include collapse;
 
   div {
+    background-color: #f6f6f673;
     ul {
       list-style: none;
       padding: 10px;
