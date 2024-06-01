@@ -54,12 +54,11 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 33px;
 
     div {
-      margin-top: 0px;
+      margin-top: 33px;
       width: 30%;
     }
   }
