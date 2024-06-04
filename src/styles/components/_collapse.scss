@@ -25,3 +25,16 @@
     }
   }
 }
+
+// Styles pour les écrans de largeur minim de 600px
+@media (min-width: 768px) {
+  .collapse-containner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 45%;
+    }
+  }
+}

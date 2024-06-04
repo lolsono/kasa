@@ -24,8 +24,10 @@ function ItemDetails() {
             <Stars rating={found.rating} />
             <Host host={found.host} />
           </div>
-          <Collapse title="Description" content={found.description} />
-          <CollapseLi title="Équipements" content={found.equipments} />
+          <div className="collapse-containner">
+            <Collapse title="Description" content={found.description} />
+            <CollapseLi title="Équipements" content={found.equipments} />
+          </div>
         </>
       )}
     </div>
