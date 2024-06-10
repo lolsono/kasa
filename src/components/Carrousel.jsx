@@ -31,6 +31,11 @@ function Carrousel({ data }) {
         onClick={next}
         className="fleche-droite"
       />
+      <div className="compteur-container">
+        <p className="compteur">
+          {currentIndex + 1}/{data.pictures.length}
+        </p>
+      </div>
     </div>
   );
 }

@@ -1,25 +1,43 @@
 .carrousel-container {
   margin-top: 27px;
+  position: relative; /* ajout de positionnement relatif pour les flèches positionnées en absolu */
+
   img {
     position: relative;
     object-fit: cover;
   }
 
   .fleche-droite {
-    height: 24px;
-    width: 24px;
+    height: 2.4em;
+    width: 2.4em;
     color: white;
     position: absolute;
-    top: 32%;
-    right: 30px;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
   }
 
   .fleche-gauche {
-    height: 24px;
-    width: 24px;
+    height: 2.4em;
+    width: 2.4em;
     color: white;
     position: absolute;
-    top: 32%;
-    left: 30px;
+    top: 50%;
+    left: 0.5em;
+    transform: translateY(-50%);
+  }
+
+  .compteur-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .compteur {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
   }
 }
