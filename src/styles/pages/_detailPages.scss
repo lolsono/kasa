@@ -1,18 +1,15 @@
 .detaile-page-container {
-
   h2 {
     color: $Primary-color;
     font-size: 18px;
     font-weight: 500;
     line-height: 25.67px;
-    margin-top: 15px;
-    margin-bottom: 5px;
   }
 
   p {
     font-size: 14px;
     font-weight: 500;
-    line-height: 19,96px;
+    line-height: 19, 96px;
   }
 
   //provisoir en attendant le carouselle
@@ -20,5 +17,76 @@
     border-radius: 10px;
     height: 255px;
     width: 100%;
+  }
+
+  //gestion de la grid pour le responsive
+  .grid-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 35%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+
+    .title-containner {
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+
+    .tag-container {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+
+    .host {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      justify-self: end;
+    }
+
+    .stars-containner {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      justify-self: start;
+    }
+  }
+}
+
+// Styles pour les écrans de largeur minim de 600px
+@media (min-width: 768px) {
+  .detaile-page-container {
+    //gestion de la grid pour le responsive
+    .grid-container {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      align-items: center;
+
+      .title-containner {
+        grid-row-start: 1;
+        grid-column-start: 1;
+      }
+
+      .tag-container {
+        grid-row-start: 2;
+        grid-column-start: 1;
+      }
+
+      .host {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        justify-self: end;
+      }
+
+      .stars-containner {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        justify-self: end;
+      }
+    }
   }
 }

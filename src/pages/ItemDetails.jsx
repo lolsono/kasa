@@ -17,10 +17,12 @@ function ItemDetails() {
       {found && (
         <>
           <Carrousel data={found} />
-          <h2>{found.title}</h2>
-          <p>{found.location}</p>
-          <Tags tags={found.tags} />
-          <div className="owner-info-container">
+          <div className="grid-container">
+            <div className="title-containner">
+              <h2>{found.title}</h2>
+              <p>{found.location}</p>
+            </div>
+            <Tags tags={found.tags} />
             <Stars rating={found.rating} />
             <Host host={found.host} />
           </div>
