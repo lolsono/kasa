@@ -19,3 +19,14 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 768px) {
+  .tag-container {
+    li {
+      height: 25px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19.96px;
+    }
+  }
+}

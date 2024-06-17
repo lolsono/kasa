@@ -5,6 +5,9 @@
   img {
     position: relative;
     object-fit: cover;
+    border-radius: 10px;
+    height: 255px;
+    width: 100%;
   }
 
   .fleche-droite {
@@ -39,5 +42,19 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carrousel-container {
+    img {
+      height: 415px;
+    }
+
+    .compteur {
+      line-height: 25.67px;
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
 }

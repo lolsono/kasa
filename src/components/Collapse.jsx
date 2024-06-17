@@ -2,15 +2,19 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, list }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
 
+  const collapseClassName = list
+    ? "collapse-container-list"
+    : "collapse-container";
+
   return (
-    <div className="collapse-container">
+    <div className={collapseClassName}>
       <button onClick={toggleCollapse}>
         {title}{" "}
         {isOpen ? (
@@ -21,42 +25,19 @@ function Collapse({ title, content }) {
       </button>
       {isOpen && (
         <div>
-          <p>{content}</p>
+          {list ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       )}
     </div>
   );
 }
-
-export function CollapseLi({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className="collapse-container-list">
-      <button onClick={toggleCollapse}>
-        {title}{" "}
-        {isOpen ? (
-          <FontAwesomeIcon icon={faChevronDown} />
-        ) : (
-          <FontAwesomeIcon icon={faChevronUp} />
-        )}
-      </button>
-      {isOpen && (
-        <div>
-          <ul>
-            {content.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-}
-
 
 export default Collapse;

@@ -1,5 +1,20 @@
 .collapse-container {
-  @include collapse;
+  margin-top: 20px;
+  button {
+    color: $Text-color;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18.54px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: $Primary-color;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
   div {
     background-color: #f6f6f673;
     p {
@@ -12,16 +27,30 @@
 }
 
 .collapse-container-list {
-  @include collapse;
-
+  margin-top: 20px;
+  button {
+    color: $Text-color;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18.54px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: $Primary-color;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
   div {
     background-color: #f6f6f673;
     ul {
-      list-style: none;
       padding: 10px;
       font-size: 12px;
       font-weight: 400;
       line-height: 17.11px;
+      list-style: none;
     }
   }
 }
@@ -29,12 +58,56 @@
 // Styles pour les écrans de largeur minim de 600px
 @media (min-width: 768px) {
   .collapse-containner {
+    margin-bottom: 50px;
+    height: 52px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    button {
+      height: 52px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25.67px;
+    }
+
     div {
       width: 45%;
+      p {
+        font-size: 18px;
+        line-height: 25.67px;
+      }
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  .collapse-containner {
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    button {
+      height: 52px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25.67px;
+    }
+
+    div {
+      width: 45%;
+      ul {
+        font-size: 18px;
+        line-height: 25.67px;
+      }
+
+      div {
+        width: 100%;
+      }
     }
   }
 }

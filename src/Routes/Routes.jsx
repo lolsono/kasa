@@ -10,8 +10,9 @@ function Routing() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/*" element={<ErrorPages404 />} />
+        <Route path="/lodging/*" element={<ErrorPages404 />} />
         <Route path="/lodging/:id" element={<ItemDetails />} />
+        <Route path="*" element={<ErrorPages404 />} />
       </Routes>
     </>
   );

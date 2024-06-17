@@ -21,21 +21,25 @@ function Carrousel({ data }) {
   return (
     <div className="carrousel-container">
       <img src={data.pictures[currentIndex]} alt={data.title} />
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        onClick={previous}
-        className="fleche-gauche"
-      />
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        onClick={next}
-        className="fleche-droite"
-      />
-      <div className="compteur-container">
-        <p className="compteur">
-          {currentIndex + 1}/{data.pictures.length}
-        </p>
-      </div>
+      {data.pictures.length > 1 && (
+        <>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={previous}
+            className="fleche-gauche"
+          />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            onClick={next}
+            className="fleche-droite"
+          />
+          <div className="compteur-container">
+            <p className="compteur">
+              {currentIndex + 1}/{data.pictures.length}
+            </p>
+          </div>
+        </>
+      )}
     </div>
   );
 }

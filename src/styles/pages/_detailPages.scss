@@ -12,13 +12,6 @@
     line-height: 19, 96px;
   }
 
-  //provisoir en attendant le carouselle
-  img {
-    border-radius: 10px;
-    height: 255px;
-    width: 100%;
-  }
-
   //gestion de la grid pour le responsive
   .grid-container {
     margin-top: 15px;
@@ -49,6 +42,7 @@
       grid-row-start: 3;
       grid-column-start: 1;
       justify-self: start;
+      font-size: 13px;
     }
   }
 }
@@ -56,6 +50,19 @@
 // Styles pour les écrans de largeur minim de 600px
 @media (min-width: 768px) {
   .detaile-page-container {
+    h2 {
+      color: $Primary-color;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 51.34px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+    }
+
     //gestion de la grid pour le responsive
     .grid-container {
       margin-top: 15px;
@@ -86,6 +93,8 @@
         grid-row-start: 2;
         grid-column-start: 2;
         justify-self: end;
+
+        font-size: 36px;
       }
     }
   }

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel.jsx";
-import Collapse, { CollapseLi } from "../components/Collapse.jsx";
+import Collapse from "../components/Collapse.jsx";
 import Host from "../components/Host.jsx";
 import Stars from "../components/Rating.jsx";
 import Tags from "../components/Tags.jsx";
@@ -28,7 +28,7 @@ function ItemDetails() {
           </div>
           <div className="collapse-containner">
             <Collapse title="Description" content={found.description} />
-            <CollapseLi title="Équipements" content={found.equipments} />
+            <Collapse title="Équipements" content={found.equipments} list />
           </div>
         </>
       )}
