@@ -8,10 +8,12 @@ function Header() {
         <Logo />
       </h1>
       <nav>
-        <Link className="link-acceuil" to="/">
+        <Link className="link-text link-acceuil" to="/">
           ACCUEIL
         </Link>
-        <Link to="/about">A PROPOS</Link>
+        <Link className="link-text" to="/about">
+          A PROPOS
+        </Link>
       </nav>
     </header>
   );
