@@ -5,12 +5,19 @@ import Host from "../components/Host.jsx";
 import Stars from "../components/Rating.jsx";
 import Tags from "../components/Tags.jsx";
 import data from "../logements.json";
+import ErrorPages404 from "../pages/Error404Page.jsx";
 
 function ItemDetails() {
   const params = useParams();
   const itemId = params.id;
 
   const found = data.find((element) => element.id === itemId);
+
+  console.log(params);
+
+  if (!found) {
+    return <ErrorPages404 />;
+  }
 
   return (
     <div className="detaile-page-container">
