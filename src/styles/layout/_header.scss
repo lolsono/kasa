@@ -18,6 +18,10 @@ header {
   .link-acceuil {
     margin-right: 15px;
   }
+
+  .active {
+    border-bottom: 2px solid #000;
+  }
 }
 
 @media (min-width: 768px) {
